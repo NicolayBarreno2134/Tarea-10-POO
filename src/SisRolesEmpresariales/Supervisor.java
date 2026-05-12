@@ -6,7 +6,7 @@ public class Supervisor implements Autenticable, Reportable {
 
     @Override
     public boolean iniciarSesion(String usuario, String clave) {
-        if(usuarioValido==usuario && claveValida==clave){
+        if(usuarioValido.equals(usuario)&&claveValida.equals(clave)){
             return true;
         }else{
             return false;

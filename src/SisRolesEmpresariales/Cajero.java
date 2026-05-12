@@ -6,7 +6,11 @@ public class Cajero implements Autenticable, Gestionable{
 
     @Override
     public boolean iniciarSesion(String usuario, String clave) {
-        return usuario.equals(usuarioValido) && clave.equals(claveValida);
+        if(usuarioValido.equals(usuario)&&claveValida.equals(clave)){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     @Override
