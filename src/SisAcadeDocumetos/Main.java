@@ -8,5 +8,6 @@ public class Main {
         actaNotas.imprimir();
         certificado.imprimir();
         horarioAcademico.imprimir();
+
     }
 }
